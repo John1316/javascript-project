@@ -54,6 +54,14 @@ wClose.addEventListener("click" , function(){
 })
 
 
+lightbox.addEventListener("click",function(e){
+if (e.target == lightbox)
+{
+            lightbox.classList.remove("show");
+
+}
+});
+
 document.addEventListener("keydown" , function(e){
     if (e.keyCode == 27){
         lightbox.classList.remove("show")
